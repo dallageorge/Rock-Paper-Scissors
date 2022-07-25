@@ -4,7 +4,7 @@ var  click = new Audio("sound/click.wav"); // buffers automatically when created
 function getComputerChoice(){
     return arr[Math.floor(Math.random()*3)];
 }
-let cc=getComputerChoice();
+
 
 function playRound(playerSelection, computerSelection) {
 if(playerSelection===computerSelection){
@@ -25,7 +25,7 @@ let playersc=0;
 let cscore=0;
 
 function select(i){
-
+    let cc=getComputerChoice();
     let inp =i;
     click.play();
     const row = document.getElementsByClassName("row")[0];
