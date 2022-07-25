@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='css/styles.css'>
+    <script src='js/script.js'></script>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <h1 class="text">Click on one of the boxes:</h1>
+    <dev class="row">
+        <dev class="box" onclick="select('rock')">
+            <img src="imgs/img_rock.png" alt="rock"></img>
+            <h3>Rock</h3>
+        </dev>
+        <dev class="box" onclick="select('paper')">
+            <img src="imgs/img_paper.png" alt="paper"></img>
+            <h3>Paper</h3>
+        </dev>
+        <dev class="box" onclick="select('scissors')">
+            <img src="imgs/img_scissors.png" alt="scissors"></img>
+            <h3>Scissors</h3>
+        </dev>
+    </dev>
+    <dev class="result">
+        <dev id="yours">
+            <h3>Your's:</h3>
+    
+            <img id="resimgyours" src="" alt="your pick"></img>
+        </dev>
+        <dev id="computers">
+            <h3>Computer's:</h3>
+           
+            <img id="resimgcomp" src="" alt="computer's pick"></img>
+        </dev>
+    </dev>
+    <h2 class="score">Your Score: 0 / Computer Score: 0</h2>
+    
+    <dev class="ret" onclick="appear()"><button id="return">Return</button></dev>
+</body>
+</html>

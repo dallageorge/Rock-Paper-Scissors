@@ -1,0 +1,130 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #111;
+    margin:0px;
+    padding:0px;
+    color:white;
+}
+h1{
+    text-align: center;
+}
+.row{
+    margin: 2%;
+
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    height:100%;
+    justify-content:center;
+    align-items: center;
+    
+  }
+.box{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin:5px;
+  height:300px;
+  width: 300px;
+  
+  
+} 
+
+.box:hover img{
+    border:4px solid red;
+}
+.box:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.box:active img{
+    border:4px solid darkred;
+    cursor: pointer;
+}
+
+
+
+
+
+
+img{
+    border:4px solid orange;
+    height:80%;
+    width:80%;
+    border-radius:10%;
+  }
+
+.score{
+    text-align: center;
+}
+.ret{
+    display:none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#return{
+    
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    background-color: orange;
+    border:none;
+    border-radius: 25%;
+    font-weight: bolder;
+}
+#return:hover{
+    background-color: rgb(212, 141, 53);
+    cursor: pointer;
+}
+#return:active{
+    background-color: rgb(121, 67, 1);
+    cursor: pointer;
+}
+
+.result{
+    display:none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+#yours{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    
+}
+#computers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    
+}
+#resimgyours{
+    width:300px;
+    height: 300px;
+}
+#resimgcomp{
+    width:300px;
+    height: 300px;
+}
+
+@media only screen and (max-width: 970px) {
+    .box {
+      height:30%;
+      width: 30%;
+    }
+    #resimgyours{
+        height:50%;
+        width: 50%;
+    }
+    #resimgcomp{
+        height:50%;
+        width: 50%;
+    }
+  }
